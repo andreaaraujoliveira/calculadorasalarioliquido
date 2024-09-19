@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header{
+    background-color:lightcoral;
+    color:black;
+    text-align: center;
+    padding: 1em;
+    font-family: "Grey Qo", cursive;
+
+}
+
+
+nav ul{
+    list-style-type: none;
+    background-color: #db5050;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li{
+    text-align: center;
+    flex: 1;
+}
+
+nav ul li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+
+}
+
+nav ul li a:hover{
+    background-color: cadetblue;
+
+}
+
+
+
+footer{
+    background-color:lightcoral;
+    color:black;
+    text-align: center;
+    padding: 1em;    
+    background-image: url("../img/gatos.png");
+    background-repeat:inherit;
+}
+
+.img-perfil{
+    width: 10%;
+    border-radius: 50%;
+  
+}
+
+.conteudo{
+    width: 100% !important;
+    background-color: white !important;
+    padding: 2em !important;
+    margin-top: 1em !important;
+    border-radius: 2em !important;
+}
+
+.principal{
+    text-align: center !important;
+    margin-left: 25% !important;
+    margin-right: 25% !important;
+    margin-top: 1% !important;
+    margin-bottom: 15% !important;
+}
+
+.img-icone{
+    width: 80% !important; 
+}
+
+.txt-icone{
+    font-size: 300% !important;
+}
+
+a {
+    text-decoration: none !important;
+    color: black !important;
+
+}
+
+@media (min-width: 200px) and (max-width: 768px) {
+    .img-icone{
+        width: 250% !important;
+    }
+    .txt-icone{
+        font-size: 220% !important ;
+    }
+    .conteudo{
+        width: 130% !important;
+        background-color: white !important;
+        padding: 1em !important;
+        margin-top: 2em !important;
+        border-radius: 1em !important;
+    } 
+    .principal{
+        text-align: center !important;
+        margin-left: 10% !important;
+        margin-right: 25% !important;
+        margin-top: 1% !important;
+        margin-bottom: 50% !important;
+    }
+    .img-perfil{
+        width: 30%;
+        border-radius: 50%;
+      
+    }
+}

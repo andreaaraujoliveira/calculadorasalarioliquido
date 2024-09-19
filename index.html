@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Financeira</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Certifique-se de que o caminho está correto -->
+</head>
+
+<body>
+    <header>
+        <h1>CALCULADORA FINANCEIRA</h1>
+        <nav>
+            <ul> <!-- Adicionado o elemento <ul> -->
+                <li><a href="https://www27.receita.fazenda.gov.br/simulador-irpf/" target="_blank">IMPOSTO DE RENDA</a>
+                </li>
+                <li><a href="https://meu.inss.gov.br/index.html" target="_blank">INSS</a></li>
+                <li><a href="https://fgtsdigital.sistema.gov.br/portal/login" target="_blank">FGTS</a></li>
+                <li><a href="contatos.html" target="_blank">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container principal">
+        <div class="form-group">
+            <label for="salarioBruto">Salário Bruto</label>
+            <input type="number" id="salarioBruto" placeholder="Campo obrigatório" required>
+        </div>
+        <div class="form-group">
+            <label for="valeTransporte">Vale Transporte</label>
+            <input type="number" id="valeTransporte" placeholder="R$ 0,00">
+        </div>
+        <div class="form-group">
+            <label for="planoSaude">Plano de Saúde</label>
+            <input type="number" id="planoSaude" placeholder="R$ 0,00">
+        </div>
+        <div class="form-group">
+            <label for="planoOdonto">Plano Odontológico</label>
+            <input type="number" id="planoOdonto" placeholder="R$ 0,00">
+        </div>
+        <div class="form-group">
+            <label for="pensao">Pensão Alimentícia</label>
+            <input type="number" id="pensao" placeholder="R$ 0,00">
+        </div>
+        <div class="form-group">
+            <label for="outros">Outros</label>
+            <input type="number" id="outros" placeholder="R$ 0,00">
+        </div>
+
+        <button onclick="calcularSalarioLiquido()">Calcular Salário Líquido</button>
+
+        <div class="result">
+
+            <p id="resultado">Salário Líquido a receber: R$ ________</p>
+        </div>
+
+        <div>
+            <h4></h4>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Eventos</th>
+                        <th>Alíquota</th>
+                        <th>Proventos</th>
+                        <th>Descontos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Salário Bruto</td>
+                        <td>--</td>
+                        <td><span id="salBruto">--</span></td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td>(-) INSS</td>
+                        <td><span id="aliqInss">--</span></td>
+                        <td>--</td>
+                        <td><span id="inss">--</span></td>
+                    </tr>
+                    <tr>
+                        <td>(-) IR</td>
+                        <td><span id="aliqIr">--</span></td>
+                        <td>--</td>
+                        <td><span id="ir">--</span></td>
+                    </tr>
+                    <tr>
+                        <td>(-) FGTS</td>
+                        <td><span id="aliqFgts">--</span></td>
+                        <td>--</td>
+                        <td><span id="fgts">--</span></td>
+                    </tr>
+                    <tr>
+                        <td>(-) Outros Descontos Gerais</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td><span id="descontosGerais">--</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <teste>
+                <h5>Total de Descontos: R$ <span id="totalDescontos">0,00</span></h5>
+            </teste>
+            <h15>**FGTS é obrigação do empregador (art. 2º da Lei 5.107/1966).</h15>
+        </div>
+    </div>
+
+
+
+    <footer class="fixed-bottom">
+        <p>&copy;2024 Andréa Araujo Oliveira, Todos os direitos reservados</p>
+    </footer>
+</body>
+<script src="js/script.js"></script>
+
+</html>

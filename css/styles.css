@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #2e3d32; /* Um tom de verde escuro */
+    text-align: right;
+    padding: 0;
+    color: #fff;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Estilos para área de navegação */
+nav ul {
+    list-style-type: none;
+    background-color: #3b4a40; /* Verde escuro mais suave */
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    text-align: center;
+    flex: 1;
+}
+
+nav ul li a {
+    display: block;
+    color: #c9d1c8; /* Cinza claro */
+    text-decoration: none; /* Remove sublinhado */
+    padding: 1em;
+}
+
+/* Evitar azul e sublinhado ao clicar nos links */
+nav ul li a:link,
+nav ul li a:visited,
+nav ul li a:active,
+nav ul li a:focus {
+    color: #c9d1c8; /* Mantém a cor desejada após clicar */
+    text-decoration: none; /* Remove sublinhado */
+    outline: none; /* Remove borda padrão do foco */
+}
+
+nav ul li a:hover {
+    background-color: black; /* Tom do imposto de renda */
+    padding: 1em;
+}
+
+/* Estilos para rodapé */
+footer {
+    background-color: #2e3d32;
+    text-align: center;
+    padding: 1em;
+    color: #fff;
+}
+
+/* Estilos para a tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #5a695c; /* Cinza escuro */
+    background-color: #3e5044; /* Verde suave */
+    color: #e0e7df; /* Cinza claro */
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #2e3d32; /* Mesmo tom do cabeçalho */
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4a5a4d; /* Verde médio */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    
+    margin-top: 3em;
+    margin-bottom: 10em;
+ 
+    background: #5d7262; /* Verde suave */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #dfe7de; /* Cinza claro */
+   
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+label {
+    flex: 1;
+    color: #ffffff;
+    font-size: 1.2em;
+}
+
+input[type="number"] {
+    flex: 2;
+    padding: 10px;
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #5a695c; /* Cinza escuro */
+    border-radius: 5px;
+}
+
+/* Campo> CALCULAR SALARIO LIQUIDO */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #3e5044; /* Verde suave */
+    color: #dfe7de; /* Cinza claro */
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #2e3d32; /* Mesmo tom do cabeçalho */
+}
+
+/* Campo> A RECEBER */
+.result {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;
+    background-color: #3e5044; /* Verde suave */
+    padding: 20px;
+    border-radius: 5px;
+    color: #dfe7de; /* Cinza claro */
+}
+
+.result h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #dfe7de; /* Cinza claro */
+}
+
+.result p {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+span {
+    font-weight: bold;
+}
+
+/* Adiciona um asterisco vermelho para os campos obrigatórios */
+label[for="salarioBruto"]::after {
+    content: "*";
+    color: red; /* Vermelho suave */
+    margin-left: 5px;
+}
+
